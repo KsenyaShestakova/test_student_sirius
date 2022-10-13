@@ -14,13 +14,17 @@ my [github profile](https://github.com/KsenyaShestakova): https://github.com/Kse
 ##Task 3.1
 My code:
 ```python
-print(input().upper())
+# print(*[el for el in map(str.capitalize, input().split())])
+# если нужно чтобы первые буквы были заглавными, а остальные строчными
+
+# а этот вариант если нужно, чтобы изменялись только первые буквы слова
+print(*[el for el in map(lambda x: f'{x[0].upper()}{x[1:]}', input().split())])
 ```
 
 Tests:
 
-| ввод                | вывод               |
-|---------------------|---------------------|
-| jghjtugkyilkiuyl111 | JGHJTUGKYILKIUYL111 |
-| Привет, мир!        | ПРИВЕТ, МИР!        |
-| meow!! МЯУ мяу!     | MEOW!! МЯУ МЯУ!     |
+| ввод                       | вывод                      |
+|----------------------------|----------------------------|
+| hbdth HGFHjhjhg JHGF hsfg  | Hbdth HGFHjhjhg JHGF Hsfg  |
+| Привет, мир!               | Привет, Мир!               |
+| meow!! МЯУ мяу!            | Meow!! МЯУ Мяу!            |
