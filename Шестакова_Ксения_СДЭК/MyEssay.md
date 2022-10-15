@@ -14,17 +14,21 @@ my [github profile](https://github.com/KsenyaShestakova): https://github.com/Kse
 ##Task 3.1
 My code:
 ```python
-# print(*[el for el in map(str.capitalize, input().split())])
-# если нужно чтобы первые буквы были заглавными, а остальные строчными
-
-# а этот вариант если нужно, чтобы изменялись только первые буквы слова
-print(*[el for el in map(lambda x: f'{x[0].upper()}{x[1:]}', input().split())])
+# эта версия оставит прежнее количество пробелов
+sp = []
+for el in input().split(' '):
+    if el:
+        sp.append(f'{el[0].upper()}{el[1:]}')
+    else:
+        sp.append(el)
+print(*sp)
 ```
 
 Tests:
 
-| ввод                       | вывод                      |
-|----------------------------|----------------------------|
-| hbdth HGFHjhjhg JHGF hsfg  | Hbdth HGFHjhjhg JHGF Hsfg  |
-| Привет, мир!               | Привет, Мир!               |
-| meow!! МЯУ мяу!            | Meow!! МЯУ Мяу!            |
+| ввод                      | вывод                     |
+|---------------------------|---------------------------|
+| hbdth HGFHjhjhg JHGF hsfg | Hbdth HGFHjhjhg JHGF Hsfg |
+| Привет, мир!              | Привет, Мир!              |
+| meow!! МЯУ мяу!           | Meow!! МЯУ Мяу!           |
+| hhh hhh hh    k k kk      | Hhh Hhh Hh    K K Kk      |
