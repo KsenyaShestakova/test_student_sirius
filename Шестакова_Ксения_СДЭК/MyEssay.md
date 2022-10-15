@@ -1,4 +1,4 @@
-##Обо мне (чуть-чуть)
+## Обо мне (чуть-чуть)
 
 Мне нравится программирование, мне бы хотелось развиваться в этой 
 сфере, поэтому я обучалась python на курсах Яндекс.Лицея 2 года. Во время 
@@ -10,7 +10,7 @@ e-mail: ksenya.shestakova.07@yandex.ru
 
 my [github profile](https://github.com/KsenyaShestakova): https://github.com/KsenyaShestakova 
 
-##Task 3.1
+## Task 3.1
 My code:
 ```python
 # эта версия оставит прежнее количество пробелов
