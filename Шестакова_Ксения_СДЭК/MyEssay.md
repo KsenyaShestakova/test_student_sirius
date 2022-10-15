@@ -8,7 +8,6 @@
 
 e-mail: ksenya.shestakova.07@yandex.ru
 
-[//]: # (Когда начиталась документации и хочется всё использовать, но нет идей как)
 my [github profile](https://github.com/KsenyaShestakova): https://github.com/KsenyaShestakova 
 
 ##Task 3.1
